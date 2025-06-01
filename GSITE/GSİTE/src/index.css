@@ -1,0 +1,32 @@
+/* === Genel Ayarlar === */
+body {
+  margin: 0;
+  padding: 0;
+  background: #949393;
+  font-family: 'Inter', sans-serif;
+  color: #2c2f34;
+}
+
+/* Başlıklar */
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;  
+  color: #2d3135;
+}
+
+/* Düğmeler */
+button {
+  font-family: inherit;
+  font-size: 2rem;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #5a5e64;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #414448;
+}
+

@@ -1,0 +1,187 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.hakkinda-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(180deg, #adadad,);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+
+.hakkinda-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hakkinda-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.hakkinda-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ecf0f1;
+}
+
+
+.hakkinda-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.hakkinda-card {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.hakkinda-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hakkinda-card h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.hakkinda-card p {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.hakkinda-card ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.hakkinda-alt {
+  font-style: italic;
+  color: #bbb;
+  text-align: center;
+  font-size: 1.3rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1.5rem;
+  margin-top: 4rem;
+}
+
+
+@media (max-width: 768px) {
+  .hakkinda-title {
+    font-size: 2.5rem;
+  }
+
+  .hakkinda-subtitle {
+    font-size: 1rem;
+  }
+
+  .hakkinda-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hakkinda-card {
+    padding: 2rem;
+  }
+
+  .hakkinda-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .hakkinda-card p {
+    font-size: 1rem;
+  }
+
+ 
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hakkinda-container {
+    padding: 3rem;
+  }
+
+  .hakkinda-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .hakkinda-card {
+    padding: 2rem;
+  }
+
+  .hakkinda-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .hakkinda-card p {
+    font-size: 1.1rem;
+  }
+}
+.ust-butons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+.begeni-dugmesi {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.begeni-dugmesi:hover {
+  background-color: #1e7e34;
+}
+
