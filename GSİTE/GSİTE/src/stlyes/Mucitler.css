@@ -1,0 +1,126 @@
+.mucitler-sayfa {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #949393;
+}
+
+.mucitler-baslik {
+  text-align: center;
+  padding: 1rem 0; 
+}
+
+.mucitler-baslik h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.mucitler-linkler {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mucitler-linkler button {
+  padding: 0.6rem 1.4rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.mucitler-linkler button:hover {
+  background-color: #0077b6;
+}
+
+#mucitler-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.mucit-kart {
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  transition: transform .2s ease;
+}
+
+.mucit-kart:hover {
+  transform: translateY(-4px);
+}
+
+.mucit-kart h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.mucit-kart p {
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .mucitler-baslik h1 {
+    font-size: 2.5rem;
+  }
+  .mucit-kart h3 {
+    font-size: 1.1rem;
+  }
+  .mucit-kart p {
+    font-size: 0.95rem;
+  }
+}
+
+
+:root {
+  --kart-1:  #f94144;
+  --kart-2:  #f3722c;
+  --kart-3:  #f8961e;
+  --kart-4:  #f9c74f;
+  --kart-5:  #90be6d;
+  --kart-6:  #43aa8b;
+  --kart-7:  #577590;
+  --kart-8:  #277da1;
+  --kart-9:  #8e44ad;
+  --kart-10: #3498db;
+  --kart-11: #e74c3c;
+  --kart-12: #1abc9c;
+  --kart-13: #f1c40f;
+  --kart-14: #2ecc71;
+}
+
+
+.mucit-kart:nth-child(1)  { background-color: var(--kart-1);  }
+.mucit-kart:nth-child(2)  { background-color: var(--kart-2);  }
+.mucit-kart:nth-child(3)  { background-color: var(--kart-3);  }
+.mucit-kart:nth-child(4)  { background-color: var(--kart-4);  }
+.mucit-kart:nth-child(5)  { background-color: var(--kart-5);  }
+.mucit-kart:nth-child(6)  { background-color: var(--kart-6);  }
+.mucit-kart:nth-child(7)  { background-color: var(--kart-7);  }
+.mucit-kart:nth-child(8)  { background-color: var(--kart-8);  }
+.mucit-kart:nth-child(9)  { background-color: var(--kart-9);  }
+.mucit-kart:nth-child(10) { background-color: var(--kart-10); }
+.mucit-kart:nth-child(11) { background-color: var(--kart-11); }
+.mucit-kart:nth-child(12) { background-color: var(--kart-12); }
+.mucit-kart:nth-child(13) { background-color: var(--kart-13); }
+.mucit-kart:nth-child(14) { background-color: var(--kart-14); }

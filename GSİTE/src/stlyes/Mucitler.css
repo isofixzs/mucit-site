@@ -1,0 +1,139 @@
+/* Sayfa tamamı */
+.mucitler-sayfa {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #949393;
+    overflow: hidden;
+  }
+  
+  /* Başlık ve üst butonlar */
+  .mucitler-baslik {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .mucitler-baslik h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .mucitler-linkler {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mucitler-linkler button {
+    padding: 0.6rem 1.4rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .mucitler-linkler button:hover {
+    background-color: #0077b6;
+  }
+  
+  /* Grid alanı */
+  #mucitler-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    height: calc(100vh - 200px);
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+  
+  /* Kartlar */
+  .mucit-kart {
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+    overflow: hidden;
+  }
+  
+  /* 🎨 Kartlara farklı arka plan renkleri */
+  .mucit-kart:nth-child(1)  { background-color: #f8d7da; }
+  .mucit-kart:nth-child(2)  { background-color: #d1ecf1; }
+  .mucit-kart:nth-child(3)  { background-color: #d4edda; }
+  .mucit-kart:nth-child(4)  { background-color: #fff3cd; }
+  .mucit-kart:nth-child(5)  { background-color: #e2e3e5; }
+  .mucit-kart:nth-child(6)  { background-color: #cce5ff; }
+  .mucit-kart:nth-child(7)  { background-color: #f0d9ff; }
+  .mucit-kart:nth-child(8)  { background-color: #ffe5b4; }
+  .mucit-kart:nth-child(9)  { background-color: #e6ffe6; }
+  .mucit-kart:nth-child(10) { background-color: #fff0f5; }
+  .mucit-kart:nth-child(11) { background-color: #e0ffff; }
+  .mucit-kart:nth-child(12) { background-color: #fef9e7; }
+  .mucit-kart:nth-child(13) { background-color: #eaf2f8; }
+  .mucit-kart:nth-child(14) { background-color: #f9ebea; }
+  
+  .mucit-kart:hover {
+    transform: translateY(-4px);
+  }
+  
+  .mucit-kart h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .mucit-kart p {
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1400px) {
+    #mucitler-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    #mucitler-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    #mucitler-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #mucitler-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .mucit-kart h3 {
+      font-size: 1.1rem;
+    }
+  
+    .mucit-kart p {
+      font-size: 0.95rem;
+    }
+  }
+  
